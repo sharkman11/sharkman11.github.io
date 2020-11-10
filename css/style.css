@@ -502,7 +502,6 @@ header {
 }
 
 #preview {
-    margin-top: -200px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -523,19 +522,19 @@ header {
 
 .about {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
     width: 100%;
-    height: 600px;
     background-color: var(--secondaryColor);
     border-bottom: 1px solid var(--borderColor);
 }
 
 .about_wrapper {
     display: flex;
-    justify-content: space-between;
+    grid-template-columns: 1, 1;
+    justify-content: space-around;
     align-items: center;
-    width: 1200px;
+    width: auto;
     height: 100%;
 }
 
@@ -636,15 +635,41 @@ br {
     color: #17a2b8;
 }
 
+.socialname{
+    position: relative;
+    font-size: 36px;
+    width: 100%;
+    text-align: center;
+    padding: 25px 0px;
+    background-color: var(--secondaryColor);
+}
+
 @media screen and (max-width: 1250px) {
     .header_title, .intro_wrapper, .about_wrapper, .sedona_popup, .kekstagram_popup{
         width: 90%;
 }
 
+
+
+@media screen and (max-width: 850px) {
+   #preview, .header_title, .intro_wrapper, .sedona_popup, .kekstagram_popup{
+        width: 70%;
+        height: auto;
+}
+
+
+
 @media screen and (max-width: 550px) {
     .sedona_popup, .kekstagram_popup{
         width: 70%;
         height: 570px;
+}
+
+@media screen and (max-width: 850px){
+    .social_links {
+    width: 100%;
+    height: auto;
+    padding: 20px 0px 20px 0px;
 }
 
 @media screen and (max-width: 550px) {
@@ -713,6 +738,14 @@ br {
     }
 } 
 
+@media screen and (max-width: 900px) {
+    .about_me {
+        width: 70%;
+        height: 500px;
+        padding: 20px 0px 0px 0px;
+    }
+} 
+
 @media screen and (max-width: 935px) {
     header {
         height: 850px;
@@ -726,11 +759,7 @@ br {
         height: auto;
     }
 
-    .about_me {
-        width: 100%;
-        height: 500px;
-        padding: 20px 0px 0px 0px;
-    }
+    
 
     .social_links {
         width: 100%;
@@ -787,3 +816,10 @@ br {
         width: 90%;
     }
 }
+
+@media screen and (max-width: 935px) {
+    .about_wrapper {
+        flex-direction: column;
+        grid-template-columns: 1;
+    }
+
