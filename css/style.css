@@ -643,11 +643,13 @@ br {
 @media screen and (max-width: 550px) {
     .sedona_popup, .kekstagram_popup{
         width: 70%;
+        height: 570px;
 }
 
 @media screen and (max-width: 550px) {
     .popupfont{
         font-size: 14;
+        color: #17a2b8;
     }
 
 @media screen and (max-width: 1250px) {
@@ -669,7 +671,8 @@ br {
 
 @media screen and (max-width: 850px) {
     .close_popupsedona, .close_popupkeks {
-        left: 193%;
+        left: 190%;
+        top: 3%;
 }
 
 @media screen and (max-width: 850px) {
