@@ -630,10 +630,25 @@ br {
     border-radius: 3px;
 }
 
+.popupfont{
+    font-size: 32;
+    font-weight: 700;
+}
+
 @media screen and (max-width: 1250px) {
     .header_title, .intro_wrapper, .about_wrapper, .sedona_popup, .kekstagram_popup{
         width: 90%;
 }
+
+@media screen and (max-width: 550px) {
+    .sedona_popup, .kekstagram_popup{
+        width: 70%;
+}
+
+@media screen and (max-width: 550px) {
+    .popupfont{
+        font-size: 14;
+    }
 
 @media screen and (max-width: 1250px) {
     .myprojects {
