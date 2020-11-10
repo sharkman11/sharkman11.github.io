@@ -378,7 +378,7 @@ header {
 }
 
 .intro_wrapper {
-    background-image: url("../img/mybackground.webp");
+    background-image: url("../img/mybackground.png");
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -677,7 +677,7 @@ br {
 
 @media screen and (max-width: 850px) {
     .intro_wrapper {
-        background-image: url("../img/mybackgroundsmall.webp");
+        background-image: url("../img/mybackgroundsmall.png");
         width: 100%;
 }
 
