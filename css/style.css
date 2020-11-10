@@ -633,6 +633,7 @@ br {
 .popupfont{
     font-size: 32;
     font-weight: 700;
+    color: #17a2b8;
 }
 
 @media screen and (max-width: 1250px) {
@@ -649,7 +650,6 @@ br {
 @media screen and (max-width: 550px) {
     .popupfont{
         font-size: 14;
-        color: #17a2b8;
     }
 
 @media screen and (max-width: 1250px) {
