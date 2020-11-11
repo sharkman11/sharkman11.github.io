@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 :root {
     --white: #eaeaea;
@@ -10,7 +10,8 @@
 	--themeDotBorder: #24292e;
 	--previewBg: rgb(251, 249, 243, 0.8);
 	--previewShadow: #f0ead6;
-	--buttonColor: black;
+    --buttonColor: black;
+    --popupColor: #d1d1d1;
 }
 
 .button_sedona{
@@ -28,7 +29,6 @@
     width: 900px;
     height: 600px;
     padding: 20px;
-    background-color: white;
     border: 1px solid grey;
     border-radius: 6px;
     box-shadow: 5px 5px 5px 0px grey;
@@ -36,7 +36,7 @@
     z-index: 1000;
     animation-name: bounce;
     animation-duration: 0.5s;
-    background-color: var(--secondaryColor);
+    background-color: var(--popupColor);
     border-bottom: 1px solid var(--borderColor);
     padding: 5px;
 }
@@ -49,7 +49,6 @@
     width: 900px;
     height: 600px;
     padding: 20px;
-    background-color: white;
     border: 1px solid grey;
     border-radius: 6px;
     box-shadow: 5px 5px 5px 0px grey;
@@ -57,7 +56,7 @@
     z-index: 1000;
     animation-name: bounce;
     animation-duration: 0.5s;
-    background-color: var(--secondaryColor);
+    background-color: var(--popupColor);
     border-bottom: 1px solid var(--borderColor);
     padding: 5px;
     
@@ -66,13 +65,13 @@
 
 h1, h2, h3, h4, h5, h6, strong {
 	color: var(--mainText);
-	font-family: 'Libre Baskerville', serif;
+	font-family: 'Roboto', sans-serif;
 	font-weight: 500;
 }
 
 p, li, span, label, input, textarea {
 	color: var(--secondaryText);
-	font-family: 'Libre Baskerville', serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 a {
@@ -84,12 +83,12 @@ ul {
 	list-style: none;
 }
 
-h1 { font-size: 56px; }
-h2 { font-size: 30px; }
-h3 { font-size: 28px; }
-h4 { font-size: 24px; }
-h5 { font-size: 20px; color: var(--white);}
-h6 { font-size: 16px; }
+h1 { font-size: 60px; }
+h2 { font-size: 35px; }
+h3 { font-size: 32px; }
+h4 { font-size: 29px; }
+h5 { font-size: 25px; color: var(--white);}
+h6 { font-size: 20px; }
 
 .modal__stack-list {
     margin: 0;
@@ -100,7 +99,7 @@ h6 { font-size: 16px; }
 }
 
 .modal__stack-item {
-    font-size: 14px;
+    font-size: 20px;
     position: relative;
     margin-bottom: 5px;
     margin-left: 10px;
@@ -123,12 +122,21 @@ h6 { font-size: 16px; }
     padding-bottom: 4px; 
 }
 
-.modal__link:hover, .modal__link:focus {
+.modal__link:hover{
     outline: none;
     color: crimson;
     border-color: transparent;
 }
 
+.modal__link:focus{
+    outline: none;
+    color: crimson;
+    border-color: transparent;
+}
+
+.sedona, .kekstagram{
+    border-radius: 3px solid crimson;
+}
 
 * {
     margin: 0;
@@ -163,10 +171,15 @@ h6 { font-size: 16px; }
 
 
 .item_project{
+
     border: 1px solid #ececec;
     min-height: 360px;
     width: auto;
     margin-bottom: 50px;
+}
+
+.item_project:hover, .item_project:focus {
+    border: 3px solid crimson;
 }
 
 .popup_photo{
@@ -178,7 +191,7 @@ h6 { font-size: 16px; }
 
 .nameprojects{
     position: relative;
-    font-size: 36px;
+    font-size: 40px;
     width: 100%;
     text-align: center;
     margin: 25px;
@@ -203,7 +216,7 @@ h6 { font-size: 16px; }
     list-style: none; }
   
   .modal__stack-item {
-    font-size: 14px;
+    font-size: 20px;
     position: relative;
     margin-bottom: 5px;
     margin-left: 10px; }
@@ -244,14 +257,14 @@ header {
 
 .sedona_second {
     width: 70%;
-    height: 50%;
+    height: 47%;
     overflow: hidden;
 }
 
 
 .sedona_third {
     width: 28%;
-    height: 50%;
+    height: 47%;
     overflow: hidden;
 }
 
@@ -266,16 +279,20 @@ header {
 .close_popupsedona{
     display: block;
     position: relative;
-    left: 94%;
+    left: 91%;
     width: 18px;
     height: 18px; 
+    background: none;
+    border: none;
 }
 .close_popupkeks{
     display: block;
     position: relative;
-    left: 94%;
+    left: 91%;
     width: 18px;
     height: 18px; 
+    background: none;
+    border: none;
 }
 .close_popupsedona:after{
       position: absolute;
@@ -332,7 +349,36 @@ header {
     transition: background-color 0.5s ease-out; 
 }
 
+.close_popupsedona:focus:after, .close_popupsedona:focus:before{
+    background-color: crimson;
+    transition: background-color 0.5s ease-out; 
+}
+.close_popupkeks:focus:after, .close_popupkeks:focus:before {
+  background-color: crimson;
+  transition: background-color 0.5s ease-out; 
+}
 
+
+.navbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: var(--mainColor);
+    border-bottom: 2px solid var(crimson);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    
+}
+.navbtn:hover, .navbtn:focus {
+    outline: none;
+    color: crimson;
+    border-color: transparent;
+}
+
+
+
+  
 .achive{
     width: 100%;
     height: auto;
@@ -342,7 +388,7 @@ header {
 
 .achive_name{
     position: relative;
-    font-size: 36px;
+    font-size: 40px;
     width: 100%;
     text-align: center;
     padding: 25px;
@@ -356,7 +402,7 @@ header {
 }
 
 .achive_item{
-    border: 1px solid #ececec;
+    border: 1px solid  #17a2b8;
     margin: 7px;
     width: 300px;
     height: 466px;
@@ -375,11 +421,11 @@ header {
 
 .greeting {
     text-align: center;
-    font-size: 56px;
+    font-size: 60px;
 }
 
 .intro_wrapper {
-    background-image: url("../img/sea.gif");
+    background-image: url("../img/background.svg");
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
@@ -412,11 +458,6 @@ header {
     align-items: center;
     width: 150px;
     height: 100%;
-}
-
-
-#navigation a {
-    color: var(--mainText);
 }
 
 .intro_content {
@@ -463,7 +504,7 @@ header {
     transition: 0.3s all;
 }
 
-.theme_dot:hover { border-width: 4px; }
+.theme_dot:hover, .theme_dot:focus { border-width: 4px;} 
 
 #light_mode { background: #fff; }
 
@@ -475,24 +516,27 @@ header {
     align-items: center;
     width: 250px;
     height: 50px;
-    font-size: 12px;
+    font-size: 18px;
     font-style: italic;
     text-align: center;
 }
 
 .popup_name{
-    font-size: 20;
+    font-size: 26;
     font-weight: 500;
     width: 100%;
     text-align: center;
     background: #fff;
     padding: 15px;
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
 }
 
-.popup_name:hover:after, .popup_name:hover:before {
-    background-color: crimson;
-    transition: background-color 0.5s ease-out; 
+
+.popup_name:hover, .navpopup_namebtn:focus {
+    outline: none;
+    color: crimson;
+    border-color: transparent;
 }
 
 .right_column {
@@ -597,7 +641,10 @@ br {
     height: 400px;
     background-color: var(--mainColor);
     border-bottom: 1px solid var(--borderColor);
+    font-family: 'Roboto', sans-serif;
 }
+
+
 
 .contacts_wrapper {
     display: flex;
@@ -623,8 +670,21 @@ br {
     background-color: var(--mainColor);
     border-radius: 5px;
     border: 1px solid var(--borderColor);
-    font-size: 14px;
+    font-size: 20px;
     padding: 0px 20px 0px 20px;
+    font-weight: 700;
+}
+
+.contact:hover, .contact:focus {
+    outline: none;
+    color: crimson;
+    border-color: transparent;
+}
+
+.achive_img:hover, .achive_img:focus {
+    border: 3px;
+    color: crimson;
+    border-color: transparent;
 }
 
 #submit_btn {
@@ -634,27 +694,37 @@ br {
     border-radius: 3px;
 }
 
+
 .popupfont{
-    font-size: 32;
+    font-size: 20px;
     font-weight: 700;
     color: #17a2b8;
 }
 
 .socialname{
     position: relative;
-    font-size: 36px;
+    font-size: 40px;
     width: 100%;
     text-align: center;
     padding: 25px 0px;
     background-color: var(--secondaryColor);
+    
 }
 
+.about__link{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+.about__link:hover, .about__link:focus {
+    border: 3px solid crimson;
+}
 
 .morephotos{
     display: none;
     font-weight: 700;
     color: crimson;
-    font-size: 10;
+    font-size: 11px;
 }
 
 
@@ -742,7 +812,7 @@ br {
 @media screen and (max-width: 850px) {
     .modal__stack-item, .modal__text{
         height: auto;
-        font-size: 10px;
+        font-size: 11px;
     }
 }
 
@@ -773,10 +843,17 @@ br {
     }
 }
 
+@media screen and (max-width: 550px) {
+    .close_popupsedona, .close_popupkeks {
+        left: 185%;
+        top: 3%;
+    }
+}
+
 @media screen and (max-width: 850px) {
     .intro_wrapper {
 
-        background-image: url("../img/sea.gif");
+        background-image: url("../img/background.svg");
         background-repeat: no-repeat;
         width: 100%;
         height: 100%;
@@ -818,7 +895,7 @@ br {
 
 @media screen and (max-width: 550px) {
     .popupfont{
-        font-size: 14;
+        font-size: 14px;
     }
 }
 

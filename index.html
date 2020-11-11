@@ -17,16 +17,16 @@
         <div class="intro_wrapper">
             <div class="nav_wrapper">
                 <ul id="navigation">
-                    <li><a href="index.html#about_me">Обо мне</a></li>
+                    <li><a class="navbtn" href="index.html#about_me">Обо мне</a></li>
                 </ul>
                 <ul id="navigation">
-                    <li><a href="index.html#myproject">Мои работы</a></li>
+                    <li><a class="navbtn" href="index.html#myproject">Мои работы</a></li>
                 </ul>
                 <ul id="navigation">
-                    <li><a href="index.html#achive">Мои заслуги</a></li>
+                    <li><a class="navbtn" href="index.html#achive">Мои заслуги</a></li>
                 </ul>
                 <ul id="navigation">
-                    <li><a href="index.html#contacts">Контакты</a></li>
+                    <li><a class="navbtn" href="index.html#contacts">Контакты</a></li>
                 </ul>
             </div>
             <div class="intro_content">
@@ -114,7 +114,7 @@
             <h2 class="nameprojects">Мои проекты</h2>
             <h3 class="nameprojects">(нажать что бы посмотреть)</h3>
             <div class="item_project">
-                <a class="sedona" id="sedona">
+                <a href="#myproject" class="sedona" id="sedona">
                     <div class="popup_photo"> 
                         <picture>
                             <source media="(min-width: 520px)" srcset="img/sedona-tablet.jpg" alt="">
@@ -130,7 +130,7 @@
                         <img class="sedona_third" src="img/sedona-mobile.jpg">
                     </div>
                     <div class="about_popup">
-                        <a class="close_popupsedona" id="closepopupsedona"></a>
+                        <button class="close_popupsedona" id="closepopupsedona"></button>
                         <div class="popupfont">Седона</div>
                             <div class="popupfont">Сайт туристического городка в штате Аризона</div>
                                 <label class="label-description">Описание проекта</label>
@@ -151,7 +151,7 @@
             </div>
 
             <div class="item_project">
-                <a class="kekstagram" id="kekstagram">
+                <a href="#myproject" class="kekstagram" id="kekstagram">
                     <div class="popup_photo"> 
                         <picture>
                             <source media="(min-width: 520px)" srcset="img/kekstagram-tablet.jpg" alt="">
@@ -167,7 +167,7 @@
                     
                     </div>
                     <div class="about_popup">
-                        <a class="close_popupkeks" id="closepopupkeks"></a>
+                        <button class="close_popupkeks" id="closepopupkeks"></button>
                         <div class="popupfont">Кекстаграм</div>
                             <div class="popupfont">Сервис для загрузки и просмотра изображений</div>
                             <label class="label-description">Описание проекта</label>
@@ -212,19 +212,19 @@
 <footer>
     <section id="contacts">
         <div class="contacts_wrapper">
-            <div class="contact">
+            <div >
                 <p>Имя</p>
-                <a>Михаил</a>
+                <a class="contact" href="#index.html/footer">Михаил</a>
             </div>
-            <div class="contact">
+            <div >
                 <p>Почта:</p>
-                <a href="mailto:sharkman_11@mail.ru">sharkman_11@mail.ru</a>
+                <a class="contact" href="mailto:sharkman_11@mail.ru">sharkman_11@mail.ru</a>
             </div>
-            <div class="contact">
+            <div >
                 <p>Номер телефона:</p>
-                <a href="tel:+79819480584">+7 999 213 73 38</a>
+                <a class="contact" href="tel:+79819480584">+7 999 213 73 38</a>
             </div>
-            <a href="index.html#header" id="submit_btn">Наверх</a>
+            <a href="index.html#header" class="about__link" id="submit_btn">Наверх</a>
         </div>
     </section>
 </footer>
