@@ -482,7 +482,7 @@ header {
 }
 
 #avatar {
-    width: 204px;
+    width: 200px;
     height: auto;
     border: 2px solid var(--borderColor);
 }
