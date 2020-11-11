@@ -38,7 +38,7 @@
     animation-duration: 0.5s;
     background-color: var(--secondaryColor);
     border-bottom: 1px solid var(--borderColor);
-    
+    padding: 5px;
 }
 
 .kekstagram_popup{
@@ -59,6 +59,7 @@
     animation-duration: 0.5s;
     background-color: var(--secondaryColor);
     border-bottom: 1px solid var(--borderColor);
+    padding: 5px;
     
 }
 
@@ -378,7 +379,8 @@ header {
 }
 
 .intro_wrapper {
-    background-image: url("../img/mybackground.png");
+    background-image: url("../img/sea.gif");
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -553,6 +555,7 @@ header {
     width: 500px;
     height: 137px;
     background: var(--mainColor);
+    margin-bottom: 20px;
 }
 
 .social_links {
@@ -644,6 +647,15 @@ br {
     background-color: var(--secondaryColor);
 }
 
+
+.morephotos{
+    display: none;
+    font-weight: 700;
+    color: crimson;
+    font-size: 10;
+}
+
+
 @media screen and (max-width: 1250px) {
     .header_title, .intro_wrapper, .about_wrapper, .sedona_popup, .kekstagram_popup{
         width: 90%;
@@ -652,18 +664,34 @@ br {
 
 
 @media screen and (max-width: 850px) {
-   #preview, .header_title, .intro_wrapper, .sedona_popup, .kekstagram_popup{
+   #preview, .header_title, .intro_wrapper, .sedona_popup, .kekstagram_popup {
         width: 70%;
-        height: auto;
+        height: 85%;
 }
 
-
+@media screen and (max-width: 850px) {
+    .modal__stack-item, .modal__text{
+        height: auto;
+        font-size: 10px;
+    }
 
 @media screen and (max-width: 550px) {
     .sedona_popup, .kekstagram_popup{
         width: 70%;
         height: 570px;
 }
+
+@media screen and (max-width: 550px) {
+    .modal__stack-item, .modal__text{
+        height: auto;
+        font-size: 14px;
+    }
+
+
+@media screen and (max-width: 550px) {
+    .morephotos{
+        display: block;
+    }
 
 @media screen and (max-width: 850px){
     .social_links {
@@ -702,8 +730,11 @@ br {
 
 @media screen and (max-width: 850px) {
     .intro_wrapper {
-        background-image: url("../img/mybackgroundsmall.png");
+
+        background-image: url("../img/sea.gif");
+        background-repeat: no-repeat;
         width: 100%;
+        height: 100%;
 }
 
 @media screen and (max-width: 510px) {
@@ -745,6 +776,11 @@ br {
         padding: 20px 0px 0px 0px;
     }
 } 
+
+@media screen and (max-width: 550px) {
+    .aboutpadding{
+        padding-top: 80px;
+    }
 
 @media screen and (max-width: 935px) {
     header {
