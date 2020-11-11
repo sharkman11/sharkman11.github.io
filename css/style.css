@@ -103,7 +103,7 @@ h6 { font-size: 20px; }
 }
 
 .modal__stack-item {
-    font-size: 20px;
+    font-size: 14px;
     position: relative;
     margin-bottom: 5px;
     margin-left: 10px;
@@ -219,21 +219,6 @@ h6 { font-size: 20px; }
     padding: 0;
     list-style: none; }
   
-  .modal__stack-item {
-    font-size: 20px;
-    position: relative;
-    margin-bottom: 5px;
-    margin-left: 10px; }
-    .modal__stack-item:before {
-      content: "";
-      display: block;
-      position: absolute;
-      top: 5px;
-      left: -10px;
-      width: 5px;
-      height: 5px;
-      border-radius: 5px;
-      background-color: crimson; }
 
 header {
     display: flex;
@@ -733,10 +718,23 @@ br {
     font-size: 11px;
 }
 
+.modal__text{
+    font-size: 14px;
+}
+
+.popupfont{
+    font-size: 14px;
+}
+
 
 @media screen and (max-width: 1250px) {
     .header_title, .intro_wrapper, .about_wrapper, .sedona_popup, .kekstagram_popup{
         width: 90%;
+}
+
+@media screen and (max-width: 1250px) {
+    .sedona_popup, .kekstagram_popup{
+        height: 80%;
 }
 
 @media screen and (max-width: 550px) {
@@ -821,8 +819,8 @@ br {
     }
 }
 
-@media screen and (max-width: 850px) {
-    .modal__stack-item, .modal__text{
+@media screen and (max-width: 950px) {
+    .modal__stack-list, .modal__text, .label-description{
         height: auto;
         font-size: 11px;
     }
@@ -886,8 +884,9 @@ br {
     }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 850px) {
     .modal__stack-item, .modal__text, .label-description{
+        font-size: 9px;
         height: auto;
         font-size: 9px;
     }
