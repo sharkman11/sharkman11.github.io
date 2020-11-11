@@ -879,8 +879,15 @@ br {
     }
 }
 
+@media screen and (max-width: 750px) {
+    .modal__stack-item, .modal__text, .label-description{
+        height: auto;
+        font-size: 9px;
+    }
+}
+
 @media screen and (max-width: 550px) {
-    .modal__stack-item, .modal__text{
+    .modal__stack-item, .modal__text, .label-description{
         height: auto;
         font-size: 14px;
     }
@@ -893,7 +900,7 @@ br {
 }
 
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 750px) {
     .popupfont{
         font-size: 14px;
     }
