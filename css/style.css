@@ -74,9 +74,13 @@ p, li, span, label, input, textarea {
 	font-family: 'Roboto', sans-serif;
 }
 
+p{
+    font-size: 20px;
+}
+
 a {
 	text-decoration: none;
-	color:#17a2b8;
+	color: var(--mainText);
 }
 
 ul {
@@ -522,6 +526,7 @@ header {
 }
 
 .popup_name{
+    color: black;
     font-size: 26;
     font-weight: 500;
     width: 100%;
@@ -661,6 +666,7 @@ br {
 }
 
 .contact {
+    color: var(--mainText);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -731,6 +737,12 @@ br {
 @media screen and (max-width: 1250px) {
     .header_title, .intro_wrapper, .about_wrapper, .sedona_popup, .kekstagram_popup{
         width: 90%;
+}
+
+@media screen and (max-width: 550px) {
+   .about_wrapper{
+       height: 700px;
+        
 }
 
 @media screen and (max-width: 1250px) {
@@ -860,11 +872,6 @@ br {
     }
 }
 
-@media screen and (max-width: 640px) {
-    .contacts_wrapper {
-        width: 90%;
-    }
-}
 
 @media screen and (max-width: 570px) {
     #skills {
@@ -955,6 +962,6 @@ br {
     }
 
     .contact {
-        width: 90%;
+        width: 280px;
     }
 }
