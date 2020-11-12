@@ -732,7 +732,7 @@ br {
 
 @media screen and (max-width: 1250px) {
     .sedona_popup, .kekstagram_popup{
-        height: 80%;
+        height: 90%;
 }
 
 @media screen and (max-width: 550px) {
@@ -791,7 +791,6 @@ br {
 @media screen and (max-width: 935px) {
     .about_wrapper {
         flex-direction: column;
-        grid-template-columns: 1;
     }
 }
 
