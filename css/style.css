@@ -762,7 +762,7 @@ br {
 
 @media screen and (max-width: 935px) {
     header {
-        height: 850px;
+        height: auto;
     }
 
     .intro_wrapper {
@@ -949,7 +949,7 @@ br {
 
 @media screen and (max-width: 440px) {
     header {
-        height: 910px;
+        height: auto;
     }
 
     .header_title {
