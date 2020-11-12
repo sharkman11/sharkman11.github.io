@@ -121,9 +121,8 @@ h6 { font-size: 20px; }
     background-color: crimson;
 }
 .modal__link {
-    margin-right: 20px;
     border-bottom: 1px solid crimson;
-    padding-bottom: 4px; 
+    font-family: 'Roboto', sans-serif;
 }
 
 .modal__link:hover{
@@ -208,8 +207,9 @@ h6 { font-size: 20px; }
     width: 100%; }
 
 .about_popup{
+    margin-top: -10px;
     margin-left: 40px;
-    max-width: 40%;
+    max-width: 60%;
 }
 
 .modal__stack-list {
@@ -268,6 +268,7 @@ header {
 .close_popupsedona{
     display: block;
     position: relative;
+    top: 3%;
     left: 91%;
     width: 18px;
     height: 18px; 
@@ -277,6 +278,7 @@ header {
 .close_popupkeks{
     display: block;
     position: relative;
+    top: 3%;
     left: 91%;
     width: 18px;
     height: 18px; 
@@ -687,7 +689,6 @@ br {
 
 
 .popupfont{
-    font-size: 20px;
     font-weight: 700;
     color: #17a2b8;
 }
@@ -715,14 +716,11 @@ br {
     display: none;
     font-weight: 700;
     color: crimson;
-    font-size: 11px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .modal__text{
-    font-size: 14px;
-}
-
-.popupfont{
     font-size: 14px;
 }
 
@@ -820,7 +818,7 @@ br {
 }
 
 @media screen and (max-width: 950px) {
-    .modal__stack-list, .modal__text, .label-description{
+    .modal__text, .label-description, .modal__stack-item{
         height: auto;
         font-size: 11px;
     }
@@ -855,7 +853,7 @@ br {
 
 @media screen and (max-width: 550px) {
     .close_popupsedona, .close_popupkeks {
-        left: 185%;
+        left: 118%;
         top: 3%;
     }
 }
@@ -886,7 +884,6 @@ br {
 
 @media screen and (max-width: 850px) {
     .modal__stack-item, .modal__text, .label-description{
-        font-size: 9px;
         height: auto;
         font-size: 9px;
     }
@@ -895,7 +892,7 @@ br {
 @media screen and (max-width: 550px) {
     .modal__stack-item, .modal__text, .label-description{
         height: auto;
-        font-size: 14px;
+        font-size: 17px;
     }
 }
 
@@ -908,7 +905,7 @@ br {
 
 @media screen and (max-width: 750px) {
     .popupfont{
-        font-size: 14px;
+        font-size: 20px;
     }
 }
 
