@@ -544,7 +544,7 @@ header {
     flex-direction: column;
     justify-content: space-between;
     position: relative;
-    width: 300px;
+    width: 280px;
     height: 180px;
     background: var(--mainColor);
     padding: 15px;
@@ -689,6 +689,7 @@ br {
 
 
 .popupfont{
+    font-size: 20px;
     font-weight: 700;
     color: #17a2b8;
 }
@@ -724,6 +725,11 @@ br {
     font-size: 14px;
 }
 
+@media screen and (max-height: 350px) {
+    .modal__text{
+      display: none;
+    }
+}
 
 @media screen and (max-width: 1250px) {
     .header_title, .intro_wrapper, .about_wrapper, .sedona_popup, .kekstagram_popup{
@@ -904,7 +910,7 @@ br {
 
 @media screen and (max-width: 750px) {
     .popupfont{
-        font-size: 20px;
+        font-size: 11px;
     }
 }
 
