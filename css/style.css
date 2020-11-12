@@ -882,6 +882,7 @@ br {
 
 @media screen and (max-width: 550px) {
     .sedona_popup, .kekstagram_popup{
+        padding-top: 20px;
         width: 70%;
         height: 570px;
     }
@@ -910,7 +911,7 @@ br {
 
 @media screen and (max-width: 750px) {
     .popupfont{
-        font-size: 11px;
+        font-size: 17px;
     }
 }
 
