@@ -797,6 +797,7 @@ br {
 @media screen and (max-width: 935px) {
     .about_wrapper {
         flex-direction: column;
+        margin-bottom: 60px;
     }
 }
 
