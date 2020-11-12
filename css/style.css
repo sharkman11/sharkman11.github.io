@@ -441,13 +441,13 @@ header {
     border-radius: 5px 5px 0 0;
     border-bottom: 1px solid var(--borderColor);
     background-color: var(--mainColor);
+    padding: 0px 5px;
 }
 
 #navigation {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
     height: 100%;
 }
 
@@ -796,8 +796,8 @@ br {
 
 @media screen and (max-width: 935px) {
     .about_wrapper {
+        height: 900px;
         flex-direction: column;
-        margin-bottom: 60px;
     }
 }
 
@@ -918,7 +918,7 @@ br {
 
 @media screen and (max-width: 550px) {
     .aboutpadding{
-        padding-top: 80px;
+        padding-top: 55px;
     }
 }
 
@@ -961,7 +961,7 @@ br {
     }
 
     .about_me {
-        height: 800px;
+        height: 850px;
     }
 
     .contact {
