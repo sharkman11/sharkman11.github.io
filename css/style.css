@@ -235,7 +235,7 @@ header {
     justify-content: center;
     align-items: center;
     width: 1200px;
-    height: 160px;
+    height: auto;
 }
 .sedona_first {
     width: 100%;
@@ -591,7 +591,7 @@ header {
     width: auto;
     height: 137px;
     background: var(--mainColor);
-    margin-bottom: 20px;
+    margin: auto 0px;
 }
 
 .social_links {
