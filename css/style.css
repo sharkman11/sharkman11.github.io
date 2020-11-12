@@ -447,7 +447,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 150px;
+    width: 170px;
     height: 100%;
 }
 
@@ -961,7 +961,7 @@ br {
     }
 
     .about_me {
-        height: 700px;
+        height: 800px;
     }
 
     .contact {
