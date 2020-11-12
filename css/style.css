@@ -953,7 +953,7 @@ br {
     }
 
     .header_title {
-        height: auto;
+        height: 400px;
     }
 
     #preview {
@@ -961,7 +961,7 @@ br {
     }
 
     .about_me {
-        height: 600px;
+        height: 700px;
     }
 
     .contact {
